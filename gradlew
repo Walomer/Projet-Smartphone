@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#!/usr/bin/env bash
-=======
 #!/usr/bin/env sh
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
 
 ##############################################################################
 ##
@@ -10,10 +6,6 @@
 ##
 ##############################################################################
 
-<<<<<<< HEAD
-# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
-DEFAULT_JVM_OPTS=""
-=======
 # Attempt to set APP_HOME
 # Resolve links: $0 may be a link
 PRG="$0"
@@ -31,21 +23,10 @@ SAVED="`pwd`"
 cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
 
 APP_NAME="Gradle"
 APP_BASE_NAME=`basename "$0"`
 
-<<<<<<< HEAD
-# Use the maximum available, or set MAX_FD != -1 to use that value.
-MAX_FD="maximum"
-
-warn ( ) {
-    echo "$*"
-}
-
-die ( ) {
-=======
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS=""
 
@@ -57,7 +38,6 @@ warn () {
 }
 
 die () {
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
     echo
     echo "$*"
     echo
@@ -68,10 +48,7 @@ die () {
 cygwin=false
 msys=false
 darwin=false
-<<<<<<< HEAD
-=======
 nonstop=false
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
 case "`uname`" in
   CYGWIN* )
     cygwin=true
@@ -82,34 +59,11 @@ case "`uname`" in
   MINGW* )
     msys=true
     ;;
-<<<<<<< HEAD
-esac
-
-# Attempt to set APP_HOME
-# Resolve links: $0 may be a link
-PRG="$0"
-# Need this for relative symlinks.
-while [ -h "$PRG" ] ; do
-    ls=`ls -ld "$PRG"`
-    link=`expr "$ls" : '.*-> \(.*\)$'`
-    if expr "$link" : '/.*' > /dev/null; then
-        PRG="$link"
-    else
-        PRG=`dirname "$PRG"`"/$link"
-    fi
-done
-SAVED="`pwd`"
-cd "`dirname \"$PRG\"`/" >/dev/null
-APP_HOME="`pwd -P`"
-cd "$SAVED" >/dev/null
-
-=======
   NONSTOP* )
     nonstop=true
     ;;
 esac
 
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 # Determine the Java command to use to start the JVM.
@@ -135,11 +89,7 @@ location of your Java installation."
 fi
 
 # Increase the maximum file descriptors if we can.
-<<<<<<< HEAD
-if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
-=======
 if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
     MAX_FD_LIMIT=`ulimit -H -n`
     if [ $? -eq 0 ] ; then
         if [ "$MAX_FD" = "maximum" -o "$MAX_FD" = "max" ] ; then
@@ -204,16 +154,6 @@ if $cygwin ; then
     esac
 fi
 
-<<<<<<< HEAD
-# Split up the JVM_OPTS And GRADLE_OPTS values into an array, following the shell quoting and substitution rules
-function splitJvmOpts() {
-    JVM_OPTS=("$@")
-}
-eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS
-JVM_OPTS[${#JVM_OPTS[*]}]="-Dorg.gradle.appname=$APP_BASE_NAME"
-
-exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
-=======
 # Escape application args
 save () {
     for i do printf %s\\n "$i" | sed "s/'/'\\\\''/g;1s/^/'/;\$s/\$/' \\\\/" ; done
@@ -230,4 +170,3 @@ if [ "$(uname)" = "Darwin" ] && [ "$HOME" = "$PWD" ]; then
 fi
 
 exec "$JAVACMD" "$@"
->>>>>>> 243d39cdef0ed753e106a24564b99bde58fe2e94
